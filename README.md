@@ -4,7 +4,7 @@ If you have faced when pulling images from docker hub due to api rate limits or 
 https://www.docker.com/increase-rate-limits#:~:text=The%20rate%20limits%20of%20100,the%20six%20hour%20window%20elapses.
 
 ## Run
-Download the latest release.
+Download the latest release: [https://github.com/amjad489/docker-pull-push/releases/tag/v0.1.0](https://github.com/amjad489/docker-pull-push/releases/tag/v0.1.0).
 ```
 $ ./docker-pull-push
 For example:
