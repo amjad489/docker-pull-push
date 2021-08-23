@@ -14,6 +14,12 @@ builds:
       - linux
       - windows
       - darwin
+brews:
+  owner: docker-pull-push
+  name: homebrew-docker-pull-push
+  folder: Formula
+  homepage: https://github.com/amjad489/docker-pull-push
+  download_strategy: CurlDownloadStrategy.
 archives:
   - replacements:
       darwin: Darwin
