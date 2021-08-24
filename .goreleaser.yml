@@ -17,7 +17,7 @@ builds:
 brews:
   - tap:
       owner: docker-pull-push
-      name: homebrew-docker-pull-push
+      name: docker-pull-push
     folder: Formula
     homepage:  https://github.com/amjad489/docker-pull-push
     description: Migrate docker images from docker hub to AWS ECR.
