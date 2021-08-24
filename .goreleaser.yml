@@ -22,8 +22,6 @@ brews:
     homepage:  https://github.com/amjad489/docker-pull-push
     description: Migrate docker images from docker hub to AWS ECR.
     license: Apache License 2.0
-    install: |-
-      bin.install "docker-pull-push"
 archives:
   - replacements:
       darwin: Darwin
