@@ -7,7 +7,8 @@ import (
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/client"
 	"github.com/docker/docker/pkg/jsonmessage"
-	"github.com/docker/docker/pkg/term"
+	//"github.com/docker/docker/pkg/term"
+	"github.com/moby/term"
 	"os"
 )
 
@@ -28,7 +29,7 @@ func PushImage(ctx context.Context, cli *client.Client, dockerAddress string, ta
 
 	authBytes, _ := json.Marshal(auth)
 	authBase64 := base64.URLEncoding.EncodeToString(authBytes)
-	push, err := cli.ImagePush(ctx, target, types.ImagePushOptions{All: true,
+	push, err := cli.ImagePush(ctx, target, types.ImagePushOptions{
 		RegistryAuth: authBase64})
 	if err != nil {
 		panic(err)
